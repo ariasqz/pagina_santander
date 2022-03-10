@@ -1,0 +1,122 @@
+header
+{
+    background-color: #F0360E;
+    border: solid;
+    display: flex;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    height: 150px;
+}
+
+side
+{
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    margin-top: -5px;
+}
+side ul
+{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 170px;
+}
+side ul li
+{
+    background-color: #F1C40F;
+    margin: 5px;
+    padding: 8px;
+    text-transform: capitalize;
+    font-size: 17px;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+
+}
+article
+{
+    background-color: #27AE60;
+    border-radius: 10px 10px 10px 10px;
+    border: solid;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 170px;
+    
+    
+}
+footer
+{
+    background-color: #34495E ;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+body
+{
+    background-color: #AEB6BF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+a 
+{
+    color: black; font-size:lem; 
+    text-decoration: none;
+}
+a:hover 
+{
+    color: red; text-decoration: underline; 
+    background-color: silver ;
+}
+#logotipo 
+{
+    border: solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 14px;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.contenedor img {
+    width: 100%;
+    height: 120px;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#titulo
+{ 
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    font-style: oblique; 
+    text-align: center;
+}
+
+#Darknet
+{
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: solid;
+    vertical-align: middle;
+}
