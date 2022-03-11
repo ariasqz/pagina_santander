@@ -1,122 +1,100 @@
-header
-{
-    background-color: #F0360E;
-    border: solid;
-    display: flex;
-    margin-bottom: 10px;
-    position: sticky;
-    top: 0;
-    height: 150px;
-}
+:root {
+    --bodyColor: #f2f2f2;
+    --textColor: #00000090;
+    --textColor2: #00000070;
+    --textColor3: #00000060;
+    --navbarColor: #ffffff;
+    --subHeaderColor: #2266c8;
+    --verdeSantander: #359138;
 
-side
-{
-    border-radius: 10px 10px 10px 10px;
-    float: left;
-    margin-top: -5px;
-}
-side ul
-{
-    display: inline-block;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    width: 170px;
-}
-side ul li
-{
-    background-color: #F1C40F;
-    margin: 5px;
-    padding: 8px;
-    text-transform: capitalize;
-    font-size: 17px;
-    border-radius: 10px 10px 10px 10px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
+    --text-xs: 0.75rem;
+    --text-sm: 1rem;
+    --text-md: 1.5rem;
+    --text-lg: 2rem;
+    --text-xl: 3rem;
 
 }
-article
-{
-    background-color: #27AE60;
-    border-radius: 10px 10px 10px 10px;
-    border: solid;
-    font-size: 20px;
-    text-align: justify;
-    margin-left: 170px;
-    
-    
+
+html, body {
+    background-color: var(--bodyColor);
 }
-footer
-{
-    background-color: #34495E ;
-    width: 100%;
-    position: relative;
-    bottom: 0;
+
+header {
+    background-color: var(--subHeaderColor);
+}
+
+.contenedor {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header .contenedor .caja-header {
+    padding: 6px 0;
+}
+
+header .contenedor .caja-header .logo {
+    height: 20px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar {
+    position: absolute;
     left: 0;
-}
-body
-{
-    background-color: #AEB6BF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-a 
-{
-    color: black; font-size:lem; 
-    text-decoration: none;
-}
-a:hover 
-{
-    color: red; text-decoration: underline; 
-    background-color: silver ;
-}
-#logotipo 
-{
-    border: solid;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-bottom: 14px;
-}
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-.contenedor img {
-    width: 100%;
-    height: 120px;
-}
-.texto-encima{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-.centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#titulo
-{ 
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-size: xx-large;
-    font-style: oblique; 
-    text-align: center;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-#Darknet
-{
-    border-radius: 50px 50px 50px 50px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    border: solid;
-    vertical-align: middle;
+.navbar .contenedor .caja-navbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar .contenedor .caja-navbar .logo-santander {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar .contenedor .caja-navbar .logo-santander img {
+    height: 70%;
+}
+
+.navbar .contenedor .caja-navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.navbar .contenedor .caja-navbar nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar .contenedor .caja-navbar nav ul li {
+    padding: 0 12px;
+}
+
+.navbar .contenedor .caja-navbar nav ul li a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: var(--text-md);
+}
+
+.navbar .contenedor .caja-navbar nav ul li a:hover{
+    color: var(--subHeaderColor);
+}
+
+.background {
+    width: 100%;
+    height: 600px;
+}
+
+.background .imagenes img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
