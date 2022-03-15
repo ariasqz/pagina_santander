@@ -45,6 +45,7 @@ header .contenedor .caja-header .logo {
     background-color: rgb(255, 255, 255, 0.9);
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .navbar .contenedor .caja-navbar {
@@ -85,7 +86,7 @@ header .contenedor .caja-header .logo {
 
 .navbar .contenedor .caja-navbar nav ul li a {
     text-decoration: none;
-    color: var(--textColor3);
+    color: black;
     font-size: var(--text-md);
 }
 
@@ -97,30 +98,41 @@ header .contenedor .caja-header .logo {
     width: 100%;
 }
 .background .imagenes{
-    height: 1060px;
+    height: 955px;
     background-color: #D5D8DC;
 }
 
 .background .imagenes img {
     width: 100%;
-    height: 1000px;
+    height: 900px;
     object-fit: cover;
 }
 .background .imagenes .texto-encima {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size: 50px;
+    transform: translate(-70%, 5%);
+    color: black;
+    font-size: 70px;
 }
 .background .contenedor .p{
-    color: var(--textColor2);
+    color: var(--textColor3);
     font-size: 26px;
     line-height: 38px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 .background .contenedor .p h1 {
-    color: var(--textColor3);
+    color: black;
+}
+.background .zona-videos {
+    width: 100%;
+    height: 420px;
+    background-color: var(--subHeaderColor);
+}
+ 
+.background .zona-videos .video1 {
+   margin-top: 60px;
+   margin-left: 90px;
+   margin-right: 120px;
 }
