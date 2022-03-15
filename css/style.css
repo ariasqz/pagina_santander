@@ -100,6 +100,61 @@ header .contenedor .caja-header .logo {
 .background .imagenes{
     height: 955px;
     background-color: #D5D8DC;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background .imagenes .slider-contenedor {
+    width: 100%;
+    display: flex;
+
+}
+
+.background .imagenes .slider-contenedor .contenido-slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contenido-slider:nth-child(2){
+    background: #332863;
+    color: #fff;
+}
+
+.contenido-slider:nth-child(3){
+    background: #611a68;
+}
+
+@media screen and (max-width:900px){
+    .contenido-slider > img{
+        width: 250px;
+    }
+
+    .contenido-slider > div{
+        width: 40%;
+    }
+
+    .contenido-slider h2{
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .contenido-slider{
+       flex-direction: column-reverse;
+    }
+
+    .contenido-slider > div{
+        width: 80%;
+    }
+
+}
+
+.background .imagenes .slider-contenedor .contenido-slider img {
+    width: 100%;
 }
 
 .background .imagenes img {
@@ -111,7 +166,7 @@ header .contenedor .caja-header .logo {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-70%, 5%);
+    transform: translate(-75%, 0%);
     color: black;
     font-size: 70px;
 }
@@ -124,6 +179,7 @@ header .contenedor .caja-header .logo {
 }
 .background .contenedor .p h1 {
     color: black;
+    
 }
 .background .zona-videos {
     width: 100%;
@@ -133,6 +189,31 @@ header .contenedor .caja-header .logo {
  
 .background .zona-videos .video1 {
    margin-top: 60px;
-   margin-left: 90px;
-   margin-right: 120px;
+   margin-left: 80px;
+   margin-right: 80px;
+}
+.background .contenedor .caja-historia {
+    display: flex;
+    background-color: #D5D8DC;
+
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: justify;
+    padding: 20px 20px;
+    color: var(--textColor3);
+}
+.background .contenedor .caja-historia img {
+    width: 400px;
+    height: 300px;
+    margin-left: 20px;
+    
+}
+
+.background .contenedor .caja-historia  div a {
+    color: var(--textColor3);
+    
+}
+
+.background .contenedor .caja-historia  div a:hover {
+    color: var(--subHeaderColor);
 }
