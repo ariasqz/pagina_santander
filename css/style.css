@@ -131,32 +131,6 @@ header .contenedor .caja-header .logo {
     background: #611a68;
 }
 
-@media screen and (max-width:900px){
-    .contenido-slider > img{
-        width: 250px;
-    }
-
-    .contenido-slider > div{
-        width: 40%;
-    }
-
-    .contenido-slider h2{
-        font-size: 23px;
-    }
-}
-
-
-@media screen and (max-width:600px){
-    .contenido-slider{
-       flex-direction: column-reverse;
-    }
-
-    .contenido-slider > div{
-        width: 80%;
-    }
-
-}
-
 .background .imagenes .slider-contenedor .contenido-slider img {
     width: 100%;
 }
@@ -183,6 +157,7 @@ header .contenedor .caja-header .logo {
 }
 .background .contenedor .p h1 {
     color: black;
+    line-height: 1;
     
 }
 .background .zona-videos {
