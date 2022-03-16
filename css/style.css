@@ -17,6 +17,7 @@
 
 html, body {
     background-color: var(--bodyColor);
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -42,7 +43,7 @@ header .contenedor .caja-header .logo {
     position: absolute;
     left: 0;
     right: 0;
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: white;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -87,7 +88,7 @@ header .contenedor .caja-header .logo {
 .navbar .contenedor .caja-navbar nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: var(--text-md);
+    font-size: var(--text-sm);
 }
 
 .navbar .contenedor .caja-navbar nav ul li a:hover{
@@ -98,7 +99,7 @@ header .contenedor .caja-header .logo {
     width: 100%;
 }
 .background .imagenes{
-    height: 955px;
+    height: auto;
     background-color: #D5D8DC;
     width: 100%;
     overflow: hidden;
@@ -108,6 +109,9 @@ header .contenedor .caja-header .logo {
     width: 100%;
     display: flex;
 
+}
+.background .imagenes .texto-encima {
+    color: white;
 }
 
 .background .imagenes .slider-contenedor .contenido-slider {
@@ -183,20 +187,28 @@ header .contenedor .caja-header .logo {
 }
 .background .zona-videos {
     width: 100%;
-    height: 420px;
+    padding: 48px 0;
     background-color: var(--subHeaderColor);
 }
- 
-.background .zona-videos .video1 {
-   margin-top: 60px;
-   margin-left: 80px;
-   margin-right: 80px;
+
+.background .zona-videos .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.background .zona-videos .contenedor iframe {
+    width: 100%;
+}
+
+.background .zona-videos .contenedor iframe:first-child {
+    margin-right: 30px;
+}
+ 
 .background .contenedor .caja-historia {
     display: flex;
     background-color: #D5D8DC;
-
-    margin-top: 40px;
+    margin: 40px 0;
     font-size: 24px;
     text-align: justify;
     padding: 20px 20px;
