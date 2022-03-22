@@ -30,8 +30,17 @@ header {
 }
 
 header .contenedor .caja-header {
-    padding: 10px 0;
+    padding-bottom: 10px; 
+    padding-top: 10px;
 }
+header .contenedor .caja-header h4 {
+    margin-top: 0px ;
+    text-align: center;
+    color: var(--navbarColor);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
 
 header .contenedor .caja-header .logo {
     height: 20px;
@@ -98,112 +107,18 @@ header .contenedor .caja-header .logo {
 .background {
     width: 100%;
 }
-.background .imagenes{
-    height: auto;
-    background-color: #D5D8DC;
-    width: 100%;
-    overflow: hidden;
-}
-
-.background .imagenes .slider-contenedor {
-    width: 100%;
-    display: flex;
-
-}
-.background .imagenes .texto-encima {
-    color: white;
-}
-
-.background .imagenes .slider-contenedor .contenido-slider {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.contenido-slider:nth-child(2){
-    background: #332863;
-    color: #fff;
-}
-
-.contenido-slider:nth-child(3){
-    background: #611a68;
-}
-
-.background .imagenes .slider-contenedor .contenido-slider img {
-    width: 100%;
-}
-
-.background .imagenes img {
-    width: 100%;
-    height: 900px;
-    object-fit: cover;
-}
-.background .imagenes .texto-encima {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-70%, 0%);
-    color: black;
-    font-size: 70px;
-}
-.background .contenedor .p{
-    color: var(--textColor3);
-    font-size: 26px;
-    line-height: 38px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.background .contenedor .p h1 {
-    color: black;
-    line-height: 1;
-    
-}
-.background .zona-videos {
-    width: 100%;
-    padding: 48px 0;
-    background-color: var(--subHeaderColor);
-}
-
-.background .zona-videos .contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.background .zona-videos .contenedor iframe {
-    width: 100%;
-}
-
-.background .zona-videos .contenedor iframe:first-child {
-    margin-right: 30px;
-}
- 
-.background .contenedor .caja-historia {
-    display: flex;
-    background-color: #D5D8DC;
-    margin: 40px 0;
-    font-size: 24px;
+.background .contenedor .caja-texto p {
     text-align: justify;
+    line-height: 1.2;
+    font-size: 20px;
+}
+.background .personas {
+    background-color: #D5D8DC;
     padding: 20px 20px;
-    color: var(--textColor3);
 }
-
-.background .contenedor .caja-historia img {
-    width: 400px;
-    height: 300px;
-    margin-left: 20px;
+.background .personas h1 {
+    text-align: center;
 }
-
-.background .contenedor .caja-historia  div a {
-    color: var(--textColor3);
-}
-
-.background .contenedor .caja-historia  div a:hover {
-    color: var(--subHeaderColor);
-}
-
 .background .piedepagina .acercadenosotros {
     background-color: #343434;
     display: flex;
