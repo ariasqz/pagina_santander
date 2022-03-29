@@ -313,8 +313,45 @@ header .contenedor .caja-header .logo {
     color: var(--subHeaderColor);
 }
 
+.background .contadores {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.background .contadores img {
+    width: 100%;
+    height: 400px;
+    filter: brightness(0.5);
+}
+
+.background .contadores .texto {
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.background .contadores .texto2 {
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.counter{
+    text-align: center;
+    font-size: 90px;
+  }
+
 .background .piedepagina {
     background-color: #343434;
+    margin-top: 0;
 }
 
 .background .piedepagina .acercadenosotros {
